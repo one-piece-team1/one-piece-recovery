@@ -1,6 +1,8 @@
 package apps
 
 import (
+	"../config"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"log"
 )
@@ -19,7 +21,9 @@ func StartApp() {
 	// url mapping but only health check here
 	MapUrls()
 
-	if err := router.Run(":7076"); err != nil {
+	port := config.GetPort()
+	appPort := fmt.Sprintf(":" + port)
+	if err := router.Run(appPort); err != nil {
 		panic(err)
 	}
 }
