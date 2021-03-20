@@ -1,9 +1,9 @@
 package apps
 
 import (
-	"../config"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/one-piece-team1/one-piece-recovery/src/config"
 	"log"
 )
 

@@ -12,5 +12,5 @@ RUN go build -o /bin/starter
 ##################
 FROM scratch
 
-COPY --from= build /bin/starter /bin/starter
+COPY --from=build /bin/starter /bin/starter
 ENTRYPOINT ["/bin/starter"]
