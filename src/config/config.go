@@ -7,7 +7,8 @@ import (
 )
 
 const (
-	APPPORT = "APPPORT"
+	APPPORT  = "APPPORT"
+	LOGLEVEL = "LOGLEVEL"
 )
 
 func GetPort() string {
@@ -16,4 +17,16 @@ func GetPort() string {
 		panic(err)
 	}
 	return os.Getenv(APPPORT)
+}
+
+func GetLogLevel() string {
+	err := godotenv.Load(".env")
+	if err != nil {
+		panic(err)
+	}
+	return os.Getenv(LOGLEVEL)
+}
+
+func IsProd() bool {
+	return GetLogLevel() == "production" || GetLogLevel() == "prod"
 }
