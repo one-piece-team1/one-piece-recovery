@@ -5,5 +5,5 @@ import (
 )
 
 func MapUrls() {
-	router.GET("/", healths.HealthCheck)
+	router.GET("/ping", healths.HealthCheck)
 }

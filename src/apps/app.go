@@ -1,10 +1,13 @@
 package apps
 
 import (
-	"fmt"
-	"github.com/gin-gonic/gin"
-	"github.com/one-piece-team1/one-piece-recovery/src/config"
 	"log"
+	"fmt"
+
+	"github.com/gin-gonic/gin"
+
+	"github.com/one-piece-team1/one-piece-recovery/src/config"
+	"github.com/one-piece-team1/one-piece-recovery/src/pkg/postgres"
 )
 
 var (
@@ -17,6 +20,9 @@ func init() {
 
 func StartApp() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
+
+	client := postgres.DBClient{}
+	client.PgConnect()
 
 	// url mapping but only health check here
 	MapUrls()
