@@ -8,10 +8,10 @@ import (
 
 func TestPgConfig(t *testing.T) {
 	conf := PgConfig{
-		Addr: "localhost",
-		Port: 5432,
+		Addr:     "localhost",
+		Port:     5432,
 		Username: "lib",
-		Name: "lib",
+		Name:     "lib",
 		Password: "123",
 	}
 	bytes, err := json.Marshal(conf)

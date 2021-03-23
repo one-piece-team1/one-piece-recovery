@@ -1,8 +1,8 @@
 package apps
 
 import (
-	"log"
 	"fmt"
+	"log"
 
 	"github.com/gin-gonic/gin"
 

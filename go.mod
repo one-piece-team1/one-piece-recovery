@@ -6,6 +6,14 @@ replace (
 	github.com/one-piece-team1/one-piece-recovery/src/apps => ../one-piece-recovery/src/apps
 	github.com/one-piece-team1/one-piece-recovery/src/config => ../one-piece-recovery/src/config
 	github.com/one-piece-team1/one-piece-recovery/src/controllers/healths => ../one-piece-recovery/src/controllers/healths
+	github.com/one-piece-team1/one-piece-recovery/src/domains/enums => ../one-piece-recovery/src/domains/enums
+	github.com/one-piece-team1/one-piece-recovery/src/domains/users => ../one-piece-recovery/src/domains/users
+	github.com/one-piece-team1/one-piece-recovery/src/domains/trips => ../one-piece-recovery/src/domains/trips
+	github.com/one-piece-team1/one-piece-recovery/src/domains/posts => ../one-piece-recovery/src/domains/posts
+	github.com/one-piece-team1/one-piece-recovery/src/domains/countries => ../one-piece-recovery/src/domains/countries
+	github.com/one-piece-team1/one-piece-recovery/src/domains/chatrooms => ../one-piece-recovery/src/domains/chatrooms
+	github.com/one-piece-team1/one-piece-recovery/src/domains/chatparticipates => ../one-piece-recovery/src/domains/chatparticipates
+	github.com/one-piece-team1/one-piece-recovery/src/domains/chats => ../one-piece-recovery/src/domains/chats
 	github.com/one-piece-team1/one-piece-recovery/src/logger => ../one-piece-recovery/src/logger
 	github.com/one-piece-team1/one-piece-recovery/src/pkg => ../one-piece-recovery/src/pkg
 	github.com/one-piece-team1/one-piece-recovery/src/pkg/postgres => ../one-piece-recovery/src/pkg/postgres
